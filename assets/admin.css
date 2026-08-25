@@ -1,0 +1,21 @@
+/* RPP Kusmedios Deluxe – Admin Styles */
+#rpkus-wrapper { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+.rpkus-row { margin-bottom: 14px; }
+.rpkus-row label { display: block; margin-bottom: 4px; }
+.rpkus-hint { font-size: 11px; color: #666; margin-left: 6px; }
+.rpkus-select, .rpkus-input { width: 100%; max-width: 480px; }
+.rpkus-short { width: 90px; }
+.rpkus-input-row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.rpkus-panel { display: none; background: #f8f9fa; border: 1px solid #dde3e8; border-radius: 4px; padding: 14px; margin: 10px 0; }
+.rpkus-panel.rpkus-active { display: block; }
+.rpkus-panel-global { margin: 10px 0; }
+.rpkus-panel-global.rpkus-show { display: block; }
+.rpkus-info { background: #eef5fb; border-left: 3px solid #0073aa; padding: 8px 12px; border-radius: 3px; margin-top: 10px; font-size: 12px; }
+.rpkus-info code { font-size: 11px; word-break: break-all; }
+.rpkus-test-result { display: inline-block; margin-top: 6px; font-size: 12px; font-weight: 600; }
+.rpkus-test-result.ok { color: #4ab866; }
+.rpkus-test-result.fail { color: #dc3232; }
+.rpkus-title { font-size: 13px; font-weight: 600; margin: 0 0 10px; padding-bottom: 6px; border-bottom: 1px solid #dde3e8; }
+.rpkus-check { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; cursor: pointer; }
+.rpkus-azura-only { display: none; }
+.rpkus-azura-only.rpkus-visible { display: flex; }
