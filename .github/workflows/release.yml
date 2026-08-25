@@ -1,0 +1,31 @@
+name: Release ZIP
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build ZIP
+        run: |
+          mkdir -p dist
+          zip -r dist/rpp-kusmedios-deluxe-${{ github.ref_name }}.zip . \
+            --exclude "*.git*" \
+            --exclude "dist/*" \
+            --exclude ".github/*" \
+            --exclude "*.md" \
+            --exclude "node_modules/*"
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/rpp-kusmedios-deluxe-${{ github.ref_name }}.zip
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
