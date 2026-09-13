@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RPP Kusmedios Deluxe — Reproductor de Radio para WordPress</title>
+  <style>
+    :root {
+      --primary: #e11d48;
+      --primary-hover: #be123c;
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --border: #334155;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; }
+    body { background-color: var(--bg); color: var(--text); line-height: 1.6; }
+    header { padding: 5rem 1.5rem 3rem; text-align: center; background: radial-gradient(circle at top, #2d1537 0%, var(--bg) 75%); }
+    .badge { display: inline-block; padding: 0.35rem 0.9rem; background: rgba(225, 29, 72, 0.15); color: #fb7185; border-radius: 9999px; font-weight: 600; font-size: 0.85rem; margin-bottom: 1.25rem; border: 1px solid rgba(225, 29, 72, 0.3); }
+    h1 { font-size: 2.75rem; font-weight: 800; margin-bottom: 1rem; letter-spacing: -0.02em; }
+    p.lead { font-size: 1.2rem; color: var(--text-muted); max-width: 680px; margin: 0 auto 2.5rem; }
+    .cta-group { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .btn { padding: 0.8rem 1.8rem; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-block; transition: all 0.2s; }
+    .btn-primary { background-color: var(--primary); color: white; }
+    .btn-primary:hover { background-color: var(--primary-hover); transform: translateY(-1px); }
+    .btn-secondary { background: var(--card-bg); color: var(--text); border: 1px solid var(--border); }
+    .btn-secondary:hover { background: #283548; }
+
+    .container { max-width: 1100px; margin: 0 auto; padding: 3rem 1.5rem; }
+    .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+    .card { background: var(--card-bg); padding: 1.75rem; border-radius: 12px; border: 1px solid var(--border); transition: transform 0.2s; }
+    .card:hover { transform: translateY(-3px); }
+    .card h3 { margin-bottom: 0.6rem; color: #fff; font-size: 1.25rem; }
+    .card p { color: var(--text-muted); font-size: 0.95rem; }
+
+    .specs { margin-top: 4rem; background: #131d31; border-radius: 12px; padding: 2rem; border: 1px solid var(--border); }
+    .specs table { width: 100%; border-collapse: collapse; text-align: left; }
+    .specs th, .specs td { padding: 0.9rem; border-bottom: 1px solid #243248; }
+    .specs th { color: var(--text-muted); font-weight: 500; width: 35%; }
+    footer { text-align: center; padding: 3rem 1.5rem; color: var(--text-muted); border-top: 1px solid #1e293b; margin-top: 4rem; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <span class="badge">Versión 1.0.0 Deluxe</span>
+    <h1>RPP Kusmedios Deluxe</h1>
+    <p class="lead">Solución definitiva para emisoras de radio online en WordPress. Soporte para múltiples plataformas de streaming, metadatos en vivo, historial interactivo y Progressive Web App.</p>
+    <div class="cta-group">
+      <a href="https://github.com/Ekusmedios-networking/rpp-kusmedios-deluxe" class="btn btn-primary" target="_blank" rel="noopener">Descargar en GitHub</a>
+      <a href="#features" class="btn btn-secondary">Ver características</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="features">
+      <h2 style="text-align: center; margin-bottom: 0.5rem; font-size: 2rem;">Potencia y control para tu estación</h2>
+      <p style="text-align: center; color: var(--text-muted); max-width: 600px; margin: 0 auto;">Optimizado para medios digitales, radios en vivo y creadores de contenido.</p>
+      
+      <div class="features-grid">
+        <div class="card">
+          <h3>📻 Autodetección de Streaming</h3>
+          <p>Configuración simple y autocompletado de URLs de transmisión para tus servidores principales.</p>
+        </div>
+        <div class="card">
+          <h3>🎵 Now Playing en Vivo</h3>
+          <p>Extracción dinámica de artista, título y carátula del tema al aire con actualización constante.</p>
+        </div>
+        <div class="card">
+          <h3>📜 Historial de Transmisión</h3>
+          <p>Muestra los últimos temas emitidos para aumentar el tiempo de permanencia y engagement de tu audiencia.</p>
+        </div>
+        <div class="card">
+          <h3>📱 Soporte PWA Nativo</h3>
+          <p>Permite que los radioescuchas instalen tu emisora como app directa en dispositivos móviles y de escritorio.</p>
+        </div>
+        <div class="card">
+          <h3>⚡ REST API & Metaboxes</h3>
+          <p>Endpoints REST personalizables y paneles metabox de administración ligeros y seguros en WordPress.</p>
+        </div>
+        <div class="card">
+          <h3>🌐 Soporte Multilenguaje</h3>
+          <p>Estructura modular compatible con plataformas de localización como POEditor.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="specs">
+      <h3 style="margin-bottom: 1.25rem; font-size: 1.4rem;">Especificaciones Técnicas</h3>
+      <table>
+        <tr>
+          <th>Compatibilidad WordPress</th>
+          <td>WordPress 5.8 o superior</td>
+        </tr>
+        <tr>
+          <th>Stack Técnico</th>
+          <td>PHP 7.4+, JavaScript nativo, CSS3, REST API</td>
+        </tr>
+        <tr>
+          <th>Servidores de Streaming</th>
+          <td>Icecast, Shoutcast, AzuraCast y streams directos (MP3, AAC, HLS)</td>
+        </tr>
+        <tr>
+          <th>Repositorio Oficial</th>
+          <td><a href="https://github.com/Ekusmedios-networking/rpp-kusmedios-deluxe" style="color: #fb7185;">github.com/Ekusmedios-networking/rpp-kusmedios-deluxe</a></td>
+        </tr>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>Desarrollado por Ekusmedios Networking · Licencia GPLv2</p>
+  </footer>
+
+</body>
+</html>
