@@ -12,16 +12,16 @@
  * Requires Plugins: radio-player-page
  */
 
-defined( \'ABSPATH\' ) || exit;
+defined( 'ABSPATH' ) || exit;
 
-define( \'RPKUS_VERSION\', \'1.0.0\' );
-define( \'RPKUS_FILE\',    __FILE__ );
-define( \'RPKUS_DIR\',     plugin_dir_path( __FILE__ ) );
-define( \'RPKUS_URL\',     plugin_dir_url( __FILE__ ) );
+define( 'RPKUS_VERSION', '1.0.0' );
+define( 'RPKUS_FILE',    __FILE__ );
+define( 'RPKUS_DIR',     plugin_dir_path( __FILE__ ) );
+define( 'RPKUS_URL',     plugin_dir_url( __FILE__ ) );
 
-require_once RPKUS_DIR . \'includes/platforms.php\';
-require_once RPKUS_DIR . \'includes/admin-metabox.php\';
-require_once RPKUS_DIR . \'includes/rest-api.php\';
-require_once RPKUS_DIR . \'includes/save-meta.php\';
-require_once RPKUS_DIR . \'includes/stream-autofill.php\';
-require_once RPKUS_DIR . \'includes/pwa.php\';
+require_once RPKUS_DIR . 'includes/platforms.php';
+require_once RPKUS_DIR . 'includes/admin-metabox.php';
+require_once RPKUS_DIR . 'includes/rest-api.php';
+require_once RPKUS_DIR . 'includes/save-meta.php';
+require_once RPKUS_DIR . 'includes/stream-autofill.php';
+require_once RPKUS_DIR . 'includes/pwa.php';
